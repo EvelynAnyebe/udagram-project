@@ -4,7 +4,7 @@ This is a solution for project of the udacity cloud devops engineer course as pa
 
 ## The infrastructure diagram
 
-The proposed infrastructure can be found here ()[]
+The proposed infrastructure can be found here (https://github.com/EvelynAnyebe/udagram-project/blob/main/infrastructure%20diagram.png)[https://github.com/EvelynAnyebe/udagram-project/blob/main/infrastructure%20diagram.png]
 
 ## Creating the Infrasturcture with CloudFormation Scripts
 
