@@ -2,7 +2,11 @@
 
 This is a solution for project of the udacity cloud devops engineer course as part of the ALX-T scholarship. In this project we create a infrastructure for the deployemnt of a high availability website. We envision this website to be like `instagram` hence the name `udagram`.
 
-## Creating the Infrasturcture
+## The infrastructure diagram
+
+The proposed infrastructure can be found here ()[]
+
+## Creating the Infrasturcture with CloudFormation Scripts
 
 To create the infrastructure for this project we need to run these scripts.
 
