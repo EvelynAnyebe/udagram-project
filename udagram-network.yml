@@ -1,10 +1,10 @@
 Description: >
   Evelyn > Udacity Cloud devops
-  This template deploys a proposed infrastructure for Udagram app.
+  This template deploys a proposed network infrastructure for Udagram app.
   It deploys a VPC accross two availability zones.
-  It deploys an internet gateway connected to a load balancer that distribute load accros two EC2 VM on public subnets. 
-  It deploys two NAT gateways that communicate send requests to webservers in two private subnets accross the two availability zones.
-  The web servers are managed by an auto-scaling group.
+  It deploys an internet gateway connected that will be connected to a load balancer.
+  It creates two public and two private subnets. 
+  It deploys two NAT gateways for connection to webservers in the two private subnets.
 
 Parameters:
   EnvironmentName:
