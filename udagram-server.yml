@@ -15,7 +15,6 @@ Resources:
     Properties:
       Roles:
         - UdacityS3ReadOnlyEC2
-
   LBSecGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
@@ -64,7 +63,6 @@ Resources:
           cd /var/www/html
           echo "Udacity Demo Web Server Up and Running!" > index.html
       ImageId: ami-0cff7528ff583bf9a
-      KeyName: that-one
       SecurityGroups:
         - Ref: WebServerSecGroup
       InstanceType: t3.medium
@@ -81,6 +79,8 @@ Resources:
         Ref: WebAppLaunchConfig
       MinSize: "4"
       MaxSize: "8"
+      TargetGroupARNs:
+        - Ref: WebAppTargetGroup
   WebAppLB:
     Type: AWS::ElasticLoadBalancingV2::LoadBalancer
     Properties:
